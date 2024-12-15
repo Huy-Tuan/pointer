@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void updateValue(int **a, int *size, int newValue, int idex){
+void addValue(int **a, int *size, int newValue, int idex){
 		if(idex > *size || idex < 0){
 			printf("Vi tri khong hop le");
 			return;
@@ -43,7 +43,7 @@ int main (){
 	printf("\nHay nhap vi tri muon them ");
 	scanf("%d", &idex);
 	
-	updateValue(&arr, &size, newValue, idex);
+	addValue(&arr, &size, newValue, idex);
 	printf("Mang sau khi them phan tu la: \n");
 	printfArr(arr, size);
 	free(arr);
